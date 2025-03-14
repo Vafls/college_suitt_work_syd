@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 public class Main {
-    static class InvalidUsernameException extends Exception {
-        public InvalidUsernameException(String message) {
-            super(message);
+    static class invNickIsk extends Exception {
+        public invNickIsk(String msg) {
+            super(msg);
         }
     }
 
     static class invPassIsk extends Exception {
-        public invPassIsk(String message) {
-            super(message);
+        public invPassIsk(String msg) {
+            super(msg);
         }
     }
 
@@ -21,12 +21,12 @@ public class Main {
         this.parol = parol;
     }
 
-    private static void validateUsername(String nick_u) throws InvalidUsernameException {
+    private static void validateUsername(String nick_u) throws invNickIsk {
         if (nick_u.length() < 5) {
-            throw new InvalidUsernameException("Ім'я повинно містити принаймні 5 символів");
+            throw new invNickIsk("Ім'я повинно містити принаймні 5 символів");
         }
         if (nick_u.contains(" ")) {
-            throw new InvalidUsernameException("Ім'я не повинно містити пробілів");
+            throw new invNickIsk("Ім'я не повинно містити пробілів");
         }
     }
 
@@ -114,7 +114,7 @@ public class Main {
 
                         for (int i = 0; i < kilkist_ludey; i++) {
                             if (ludu[i].imya.equals(imya)) {
-                                throw new InvalidUsernameException("Користувач з таким іменем вже існує");
+                                throw new invNickIsk("Користувач з таким іменем вже існує");
                             }
                         }
 
@@ -125,7 +125,7 @@ public class Main {
                         ludu[kilkist_ludey] = new Main(imya, parol);
                         kilkist_ludey++;
                         System.out.println("Користувача успішно зареєстровано!");
-                    } catch (InvalidUsernameException | invPassIsk e) {
+                    } catch (invNickIsk | invPassIsk e) {
                         System.out.println("Помилка: " + e.getMessage());
                     } catch (Exception e) {
                         System.out.println("Помилка додавання користувача: " + e.getMessage());
