@@ -8,11 +8,10 @@ public class Table {
     }
 
     public void doAction() {
-        // Example implementation
-        System.out.println("Action performed on table " + tableNumber);
+        System.out.println("Дія виконана над столом " + tableNumber);
     }
     @Override
     public String toString() {
-        return "Table [ tableNumber=" + tableNumber + ", capacity=" + capacity + " ]";
+        return "Стіл [ номер столу=" + tableNumber + ", кількість місць=" + capacity + " ]";
     }
 }

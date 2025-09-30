@@ -8,11 +8,11 @@ public class RestaurantSystem {
     }
 
     public void doAction() {
-        // Action implementation goes here
+        System.out.println("Виконується дія в системі ресторану...");
     }
 
     @Override
     public String toString() {
-        return "RestaurantSystem [ systemName=" + systemName + ", version=" + version + " ]";
+        return "Система ресторану [ назва=" + systemName + ", версія=" + version + " ]";
     }
 }

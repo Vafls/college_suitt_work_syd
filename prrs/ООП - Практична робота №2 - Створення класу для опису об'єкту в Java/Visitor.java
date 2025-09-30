@@ -10,11 +10,11 @@ public class Visitor {
     }
 
     public void doAction() {
-        // Action implementation placeholder
+        System.out.println("Відвідувач " + visitorName + " виконує дію з метою: " + visitorGoal);
     }
 
     @Override
     public String toString() {
-        return "Visitor [ visitorName=" + visitorName + ", visitorGoal=" + visitorGoal + ", visitorAge=" + visitorAge + " ]";
+        return "Відвідувач [ ім'я=" + visitorName + ", мета=" + visitorGoal + ", вік=" + visitorAge + " ]";
     }
 }

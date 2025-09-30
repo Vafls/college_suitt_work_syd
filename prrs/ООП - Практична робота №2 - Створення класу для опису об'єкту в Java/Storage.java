@@ -8,11 +8,11 @@ public class Storage {
     }
 
     public void doAction() {
-        // Action implementation placeholder
+        System.out.println("Виконується дія для складу: " + storageName);
     }
 
     @Override
     public String toString() {
-        return "Storage [ storageName=" + storageName + ", capacityKg=" + capacityKg + " ]";
+        return "Склад [ назва=" + storageName + ", місткість(кг)=" + capacityKg + " ]";
     }
 }

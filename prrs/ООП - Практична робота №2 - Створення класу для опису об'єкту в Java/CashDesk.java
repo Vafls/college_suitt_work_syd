@@ -8,11 +8,10 @@ public class CashDesk {
     }
 
     public void doAction() {
-        // Example implementation: print current balance
-        System.out.println("Action performed. Current balance: " + balance);
+        System.out.println("Дію виконано. Поточний баланс: " + balance);
     }
     @Override
     public String toString() {
-        return "CashDesk [ cashDeskId=" + cashDeskId + ", balance=" + balance + " ]";
+        return "Каса [ номер каси=" + cashDeskId + ", баланс=" + balance + " ]";
     }
 }

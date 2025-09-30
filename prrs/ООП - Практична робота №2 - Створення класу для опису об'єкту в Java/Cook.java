@@ -8,11 +8,11 @@ public class Cook {
     }
 
     public void doAction() {
-        System.out.println(cookName + " is cooking a " + specialization + " dish.");
+        System.out.println(cookName + " готує страву спеціалізації: " + specialization + ".");
     }
 
     @Override
     public String toString() {
-        return "Cook [ cookName=" + cookName + ", specialization=" + specialization + " ]";
+        return "Кухар [ ім'я=" + cookName + ", спеціалізація=" + specialization + " ]";
     }
 }

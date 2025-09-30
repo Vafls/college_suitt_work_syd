@@ -8,11 +8,11 @@ public class Waiter {
     }
 
     public void doAction() {
-        System.out.println(waiterName + " is serving a customer.");
+        System.out.println(waiterName + " обслуговує клієнта.");
     }
 
     @Override
     public String toString() {
-        return "Waiter [ waiterName=" + waiterName + ", experienceYears=" + experienceYears + " ]";
+        return "Офіціант [ ім'я=" + waiterName + ", досвід=" + experienceYears + " років ]";
     }
 }

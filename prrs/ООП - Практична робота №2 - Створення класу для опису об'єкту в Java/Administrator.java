@@ -8,11 +8,11 @@ public class Administrator {
     }
 
     public void doAction() {
-        System.out.println(adminName + " is performing an action during " + shift + " shift.");
+        System.out.println(adminName + " виконує дію під час " + shift + " зміни.");
     }
 
     @Override
     public String toString() {
-        return "Administrator [ adminName=" + adminName + ", shift=" + shift + " ]";
+        return "Адміністратор [ ім'я адміністратора=" + adminName + ", зміна=" + shift + " ]";
     }
 }

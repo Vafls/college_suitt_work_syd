@@ -8,11 +8,11 @@ public class Order {
     }
 
     public void doAction() {
-        // Action implementation placeholder
+        System.out.println("Дія над замовленням виконана для orderId: " + orderId);
     }
 
     @Override
     public String toString() {
-        return "Order [ orderId=" + orderId + ", orderDetails=" + orderDetails + " ]";
+        return "Замовлення [ orderId=" + orderId + ", orderDetails=" + orderDetails + " ]";
     }
 }
