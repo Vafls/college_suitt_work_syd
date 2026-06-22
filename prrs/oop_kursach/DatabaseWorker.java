@@ -36,7 +36,7 @@ public class DatabaseWorker {
         for (int i = 0; i < lines.size(); i++) {
             String[] p = lines.get(i).split(";", -1);
             if (p[0].equals(username) && p[1].equals(password)) {
-                return "OK;" + (i + 1); // айди
+                return "OK;" + (i + 1);
             }
         }
         return "ERROR:Невірний логін або пароль";
